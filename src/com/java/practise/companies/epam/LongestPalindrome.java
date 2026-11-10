@@ -4,21 +4,9 @@ package com.java.practise.companies.epam;
 //Input: s = "babad "Output: "bab" Explanation: "aba" is also a valid answer.
 //Input: s = "cbbd" Output: "bb"
 
-public class Palindrome {
+public class LongestPalindrome {
 
     static void main() {
-        System.out.println("Epam");
-
-        String string = "babad";
-        String reverse ="";
-
-        for(int i=0; i<string.length(); i++){
-             reverse += String.valueOf(string.charAt(i));
-        }
-
-        if(reverse.equals(string)){
-            System.out.println("Palindrome");
-        }
 
         System.out.println(longestPalindrome("babad")); // bab
         System.out.println(longestPalindrome("cbbd"));  //
