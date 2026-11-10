@@ -4,13 +4,14 @@ package com.java.practise.strings;
 public class Palindrome {
 
     static void main() {
-        String string = "babad";
+        String str = "babad";
         String reverse = "";
-        for(int i=0; i<string.length(); i++){
-             reverse += String.valueOf(string.charAt(i));
+        for(int i=str.length()-1 ;i>=0; i--){
+             reverse += String.valueOf(str.charAt(i));
         }
 
-        if(reverse.equals(string)){
+        System.out.println(reverse);
+        if(reverse.equals(str)){
             System.out.println("Palindrome");
         }else {
             System.out.println("Not Palindrome");
